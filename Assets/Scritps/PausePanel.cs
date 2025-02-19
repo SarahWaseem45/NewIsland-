@@ -26,6 +26,11 @@ public class PausePanel : MonoBehaviour
         Time.timeScale=1f;
         SceneManager.LoadScene("Level 1");
     }
+    public void Home2Game()
+    {
+        Time.timeScale=1f;
+        SceneManager.LoadScene("Level 2");
+    }
      
 }
 
