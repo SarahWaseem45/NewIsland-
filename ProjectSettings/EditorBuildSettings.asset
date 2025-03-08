@@ -33,11 +33,11 @@ EditorBuildSettings:
     path: Assets/Textures/Sprites/Scenes/HardSpellGame.unity
     guid: e651055b9b4ff884ba509256f2e1858f
   - enabled: 1
-    path: Assets/Textures/Sprites/Scenes/Level 1.unity
-    guid: fc1a71d7dbbfadb49b025653e9069834
-  - enabled: 1
     path: Assets/Textures/Sprites/Scenes/Easy Math.unity
     guid: 448337482017e0a46a993b926519fc8d
+  - enabled: 1
+    path: Assets/Textures/Sprites/Scenes/Level 1.unity
+    guid: fc1a71d7dbbfadb49b025653e9069834
   - enabled: 1
     path: Assets/Textures/Sprites/Scenes/EasySpellGame.unity
     guid: c9de8a2cbcca5aa4293a5a6c1cf67bbd
