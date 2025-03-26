@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Textures/Sprites/Scenes/loadscene.unity
+    guid: d5c51871b5c2192468f7b36598175f68
+  - enabled: 1
     path: Assets/Textures/Sprites/Scenes/islands.unity
     guid: 511688edaa86a164eab07a2990255574
   - enabled: 1
