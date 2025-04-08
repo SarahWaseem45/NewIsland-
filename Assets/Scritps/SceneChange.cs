@@ -43,4 +43,8 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene("HardSpellGame"); 
     }
+     public void BackGame()
+    {
+        SceneManager.LoadScene("islands"); 
+    }
 }

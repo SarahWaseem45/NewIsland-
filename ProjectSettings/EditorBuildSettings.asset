@@ -6,7 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/islands.unity
+=======
+    path: Assets/Textures/Sprites/Scenes/loadscene.unity
+    guid: d5c51871b5c2192468f7b36598175f68
+  - enabled: 1
+    path: Assets/Textures/Sprites/Scenes/islands.unity
+>>>>>>> aeb45ee220afb89128125c6dc6339a0b061b550b
     guid: 511688edaa86a164eab07a2990255574
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
@@ -33,6 +40,7 @@ EditorBuildSettings:
     path: Assets/Scenes/HardSpellGame.unity
     guid: e651055b9b4ff884ba509256f2e1858f
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/Level 1.unity
     guid: fc1a71d7dbbfadb49b025653e9069834
   - enabled: 1
@@ -40,5 +48,14 @@ EditorBuildSettings:
     guid: 448337482017e0a46a993b926519fc8d
   - enabled: 1
     path: Assets/Scenes/EasySpellGame.unity
+=======
+    path: Assets/Textures/Sprites/Scenes/Easy Math.unity
+    guid: 448337482017e0a46a993b926519fc8d
+  - enabled: 1
+    path: Assets/Textures/Sprites/Scenes/Level 1.unity
+    guid: fc1a71d7dbbfadb49b025653e9069834
+  - enabled: 1
+    path: Assets/Textures/Sprites/Scenes/EasySpellGame.unity
+>>>>>>> aeb45ee220afb89128125c6dc6339a0b061b550b
     guid: c9de8a2cbcca5aa4293a5a6c1cf67bbd
   m_configObjects: {}

@@ -1,12 +1,20 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scenes/Sprites/Nautilus.psd.meta
 guid: 1f5991789ec7f264a99f75bab532a240
+=======
+guid: f483b024f461c8a41b032d292f6e53f8
+>>>>>>> aeb45ee220afb89128125c6dc6339a0b061b550b:Assets/Textures/Sprites/Scenes/Sprites/Nautilus.psd.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
+<<<<<<< HEAD:Assets/Scenes/Sprites/Nautilus.psd.meta
     enableMipMap: 1
+=======
+    enableMipMap: 0
+>>>>>>> aeb45ee220afb89128125c6dc6339a0b061b550b:Assets/Textures/Sprites/Scenes/Sprites/Nautilus.psd.meta
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -36,6 +44,7 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
+<<<<<<< HEAD:Assets/Scenes/Sprites/Nautilus.psd.meta
     wrapU: 0
     wrapV: 0
     wrapW: 0
@@ -43,6 +52,15 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 0
+=======
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+>>>>>>> aeb45ee220afb89128125c6dc6339a0b061b550b:Assets/Textures/Sprites/Scenes/Sprites/Nautilus.psd.meta
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -51,9 +69,15 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
+<<<<<<< HEAD:Assets/Scenes/Sprites/Nautilus.psd.meta
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
   textureType: 0
+=======
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+>>>>>>> aeb45ee220afb89128125c6dc6339a0b061b550b:Assets/Textures/Sprites/Scenes/Sprites/Nautilus.psd.meta
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -78,6 +102,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+<<<<<<< HEAD:Assets/Scenes/Sprites/Nautilus.psd.meta
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -90,6 +115,8 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+=======
+>>>>>>> aeb45ee220afb89128125c6dc6339a0b061b550b:Assets/Textures/Sprites/Scenes/Sprites/Nautilus.psd.meta
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -131,7 +158,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD:Assets/Scenes/Sprites/Nautilus.psd.meta
     spriteID: 
+=======
+    spriteID: 5e97eb03825dee720800000000000000
+>>>>>>> aeb45ee220afb89128125c6dc6339a0b061b550b:Assets/Textures/Sprites/Scenes/Sprites/Nautilus.psd.meta
     internalID: 0
     vertices: []
     indices: 
@@ -141,7 +172,11 @@ TextureImporter:
     nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
+<<<<<<< HEAD:Assets/Scenes/Sprites/Nautilus.psd.meta
   pSDShowRemoveMatteOption: 0
+=======
+  pSDShowRemoveMatteOption: 1
+>>>>>>> aeb45ee220afb89128125c6dc6339a0b061b550b:Assets/Textures/Sprites/Scenes/Sprites/Nautilus.psd.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 
