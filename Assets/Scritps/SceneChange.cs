@@ -47,4 +47,16 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene("islands"); 
     }
+     public void EasyGrammar()
+    {
+        SceneManager.LoadScene("EasyGrammar");
+    }
+    public void MediumGrammar()
+    {
+        SceneManager.LoadScene("MediumGrammar");
+    }
+  public void HardGrammar()
+    {
+        SceneManager.LoadScene("HardGrammar");
+    }
 }

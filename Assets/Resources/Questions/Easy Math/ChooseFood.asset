@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: ChooseFood
   m_EditorClassIdentifier: 
-  _info: 'What is the next number in the sequence: 5, 10, 15, _?'
+  _info: How many minutes in one hour?
   _answers:
-  - _info: 18
+  - _info: 30
     _isCorrect: 0
-  - _info: 20
+  - _info: 50
+    _isCorrect: 0
+  - _info: 60
     _isCorrect: 1
-  - _info: 22
-    _isCorrect: 0
-  - _info: 25
+  - _info: 90
     _isCorrect: 0
   _useTimer: 0
-  _timer: 0
+  _timer: 1
   _answerType: 1
   _addScore: 10

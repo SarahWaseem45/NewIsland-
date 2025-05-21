@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: KM
   m_EditorClassIdentifier: 
-  _info: hello
+  _info: What is the next prime number after 29?
   _answers:
-  - _info: Triangle
+  - _info: 30
     _isCorrect: 0
-  - _info: Rectangle
-    _isCorrect: 0
-  - _info: Square
+  - _info: 31
     _isCorrect: 1
+  - _info: 33
+    _isCorrect: 0
   _useTimer: 1
   _timer: 7
   _answerType: 1

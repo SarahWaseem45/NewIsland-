@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: Math
   m_EditorClassIdentifier: 
-  _info: If you have 10 apples and eat 3, how many apples are left?
+  _info: 'The probability of getting a 3 on a dice is:'
   _answers:
-  - _info: 5
+  - _info: 1/3
     _isCorrect: 0
-  - _info: 6
+  - _info: 1/5
     _isCorrect: 0
-  - _info: 7
+  - _info: 1/6
     _isCorrect: 1
-  - _info: 8
+  - _info: 1/4
     _isCorrect: 0
   _useTimer: 0
   _timer: 6

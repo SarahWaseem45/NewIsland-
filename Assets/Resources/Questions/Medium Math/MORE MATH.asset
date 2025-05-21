@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: MORE MATH
   m_EditorClassIdentifier: 
-  _info: 'Which is longer: a meter or a centimeter?'
+  _info: What is 5% of 200?
   _answers:
-  - _info: Meter
+  - _info: 5
     _isCorrect: 1
-  - _info: Centimeter
+  - _info: 10
+    _isCorrect: 1
+  - _info: 15
     _isCorrect: 0
-  - _info: 'They are equal '
-    _isCorrect: 0
-  - _info: Can not be determined
+  - _info: 20
     _isCorrect: 0
   _useTimer: 1
   _timer: 4
