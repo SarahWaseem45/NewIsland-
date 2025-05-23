@@ -62,7 +62,7 @@ public class GrammarQues : MonoBehaviour
         imageQuestion.SetNativeSize();
         imageQuestion.gameObject.SetActive(true);
 
-        instructionText.text = "Choose the correct grammar";
+        instructionText.text = "Choose the correct answer";
         instructionText.gameObject.SetActive(true);
 
         grammarSentenceText.text = q.sentenceWithBlank;

@@ -59,4 +59,8 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene("HardGrammar");
     }
+     public void EasyGK()
+    {
+        SceneManager.LoadScene("EasyGK");
+    }
 }
