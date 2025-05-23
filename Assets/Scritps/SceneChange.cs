@@ -59,8 +59,11 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene("HardGrammar");
     }
+<<<<<<< Updated upstream
      public void EasyGK()
     {
         SceneManager.LoadScene("EasyGK");
     }
+=======
+>>>>>>> Stashed changes
 }
