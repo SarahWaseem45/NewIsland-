@@ -157,17 +157,10 @@ RectTransform:
   m_Father: {fileID: 631034746}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
   m_AnchorMin: {x: 0, y: 0.748}
   m_AnchorMax: {x: 0.5, y: 0.97623456}
   m_AnchoredPosition: {x: 3.5, y: 0.5}
   m_SizeDelta: {x: -1.0408001, y: -4.143402}
-=======
-  m_AnchorMin: {x: 0, y: 0.5905319}
-  m_AnchorMax: {x: 0.5164244, y: 1}
-  m_AnchoredPosition: {x: -0.2680359, y: -0.23301697}
-  m_SizeDelta: {x: -0.5360999, y: 0.5230026}
->>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &82643668
 MonoBehaviour:
@@ -242,17 +235,10 @@ RectTransform:
   m_Father: {fileID: 2090358160}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
   m_AnchorMin: {x: 0.70877075, y: 0.14340743}
   m_AnchorMax: {x: 0.9686459, y: 0.47970372}
   m_AnchoredPosition: {x: 3.1039429, y: -2.2311096}
   m_SizeDelta: {x: -4.3989, y: 0.01309967}
-=======
-  m_AnchorMin: {x: 0.563, y: 0.12029631}
-  m_AnchorMax: {x: 0.85356253, y: 0.38411117}
-  m_AnchoredPosition: {x: 0.88531494, y: 0.7930298}
-  m_SizeDelta: {x: -2.2294998, y: -6.415001}
->>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &107867628
 MonoBehaviour:
@@ -635,17 +621,10 @@ RectTransform:
   m_Father: {fileID: 2090358160}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
   m_AnchorMin: {x: 0.43158326, y: 0.324}
   m_AnchorMax: {x: 0.69100004, y: 0.5361852}
   m_AnchoredPosition: {x: 0.35279846, y: -3.1549988}
   m_SizeDelta: {x: -0.7052994, y: 0.11000061}
-=======
-  m_AnchorMin: {x: 0.44410408, y: 0.34433338}
-  m_AnchorMax: {x: 0.69100004, y: 0.5361852}
-  m_AnchoredPosition: {x: 1.4859924, y: -0.55000305}
-  m_SizeDelta: {x: -2.9717026, y: -5.1000004}
->>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &333925248
 MonoBehaviour:
@@ -907,7 +886,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1270968705}
-<<<<<<< Updated upstream
   m_Father: {fileID: 2090358160}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -915,15 +893,6 @@ RectTransform:
   m_AnchorMax: {x: 0.4274166, y: 0.425}
   m_AnchoredPosition: {x: -2.9511108, y: -4.5385437}
   m_SizeDelta: {x: 7.3464966, y: -1.5666504}
-=======
-  m_Father: {fileID: 1272806271}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.55466264}
-  m_AnchorMax: {x: 0.48700002, y: 1}
-  m_AnchoredPosition: {x: 0.2774048, y: -1.074501}
-  m_SizeDelta: {x: -3.9541998, y: -2.1490002}
->>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &496823799
 MonoBehaviour:
@@ -1074,17 +1043,10 @@ RectTransform:
   m_Father: {fileID: 2090358160}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
   m_AnchorMin: {x: 0.06331251, y: 0.25666666}
   m_AnchorMax: {x: 0.28300002, y: 0.56574076}
   m_AnchoredPosition: {x: 1.1118164, y: -0.13320923}
   m_SizeDelta: {x: -7.3893003, y: 2.8230972}
-=======
-  m_AnchorMin: {x: 0.18547916, y: 0.324}
-  m_AnchorMax: {x: 0.3815626, y: 0.5278519}
-  m_AnchoredPosition: {x: 0.6199951, y: -3}
-  m_SizeDelta: {x: -11.170013, y: 0.5}
->>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &631034747
 MonoBehaviour:
@@ -1394,17 +1356,10 @@ RectTransform:
   m_Father: {fileID: 333925247}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
   m_AnchorMin: {x: 0.5, y: 0.68344665}
   m_AnchorMax: {x: 0.96582055, y: 0.960745}
   m_AnchoredPosition: {x: -0.81420135, y: -4.1856995}
   m_SizeDelta: {x: 0.2791996, y: 8.0081}
-=======
-  m_AnchorMin: {x: 0.4548772, y: 0.5395845}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.1489258, y: -0.76171875}
-  m_SizeDelta: {x: 0.67907715, y: 1.6555176}
->>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &813395481
 MonoBehaviour:
@@ -1753,11 +1708,7 @@ RectTransform:
   m_Children:
   - {fileID: 1854640391}
   m_Father: {fileID: 2090358160}
-<<<<<<< Updated upstream
   m_RootOrder: 6
-=======
-  m_RootOrder: 5
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0087916665, y: 0.83977777}
   m_AnchorMax: {x: 0.11577083, y: 0.975}
@@ -2180,24 +2131,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 496823798}
+  m_Children: []
   m_Father: {fileID: 2090358160}
-<<<<<<< Updated upstream
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.25327083, y: 0.074}
   m_AnchorMax: {x: 0.48418745, y: 0.3165556}
   m_AnchoredPosition: {x: 2.2366333, y: -4.696167}
   m_SizeDelta: {x: -10.39978, y: -7.373398}
-=======
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.028479168, y: 0.08433332}
-  m_AnchorMax: {x: 0.3482708, y: 0.30111116}
-  m_AnchoredPosition: {x: 1.6433105, y: 1.3785095}
-  m_SizeDelta: {x: -1.2866974, y: -3.24297}
->>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1272806272
 MonoBehaviour:
@@ -2415,11 +2356,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521118664}
-<<<<<<< Updated upstream
   m_LocalRotation: {x: -0, y: -0, z: 0.0053930623, w: 0.9999855}
-=======
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
->>>>>>> Stashed changes
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2427,19 +2364,11 @@ RectTransform:
   - {fileID: 859952376}
   m_Father: {fileID: 107867627}
   m_RootOrder: 0
-<<<<<<< Updated upstream
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.618}
   m_AnchorMin: {x: 0.53032994, y: 0.7847916}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 5.005844, y: 2.8626862}
   m_SizeDelta: {x: -9.297199, y: -1.3344002}
-=======
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.51439756, y: 0.6443625}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.5010986, y: 1.1581116}
-  m_SizeDelta: {x: -2.2878265, y: 2.0748596}
->>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1521118666
 MonoBehaviour:
