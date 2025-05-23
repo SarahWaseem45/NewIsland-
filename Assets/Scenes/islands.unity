@@ -156,7 +156,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1191859323}
+<<<<<<< Updated upstream
+  m_RootOrder: 7
+=======
   m_RootOrder: 6
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.93700004, y: 0.89000005}
   m_AnchorMax: {x: 0.97489613, y: 0.9574817}
@@ -724,12 +728,21 @@ RectTransform:
   m_Children:
   - {fileID: 1067937919}
   m_Father: {fileID: 1191859323}
+<<<<<<< Updated upstream
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.027, y: 0.14814815}
+  m_AnchorMax: {x: 0.32922918, y: 0.7444074}
+  m_AnchoredPosition: {x: -3.746582, y: 0.98358154}
+  m_SizeDelta: {x: 0.91279984, y: 0.39930725}
+=======
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.263, y: 0.10462963}
   m_AnchorMax: {x: 0.50583345, y: 0.53425926}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -10.794098, y: -0.70401}
+>>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &573037137
 MonoBehaviour:
@@ -825,6 +838,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573037135}
   m_CullTransparentMesh: 1
+--- !u!1 &868092595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 868092596}
+  - component: {fileID: 868092598}
+  - component: {fileID: 868092597}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &868092596
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868092595}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1191859323}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &868092597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868092595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: a8622b281edf10846b785f40cfc4decc, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &868092598
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868092595}
+  m_CullTransparentMesh: 1
 --- !u!1 &1067937918
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,10 +948,17 @@ RectTransform:
   m_Father: {fileID: 573037136}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
+  m_AnchorMin: {x: 0.14755881, y: 0.85541546}
+  m_AnchorMax: {x: 0.621397, y: 1}
+  m_AnchoredPosition: {x: 0.8350067, y: 0.98428345}
+  m_SizeDelta: {x: -8.330101, y: -1.8773003}
+=======
   m_AnchorMin: {x: 0.15619567, y: 0.809}
   m_AnchorMax: {x: 0.676587, y: 1}
   m_AnchoredPosition: {x: -1, y: 2.602005}
   m_SizeDelta: {x: -4.046898, y: -5.1126995}
+>>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1067937920
 MonoBehaviour:
@@ -994,6 +1090,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+<<<<<<< Updated upstream
+  - {fileID: 868092596}
+=======
+>>>>>>> Stashed changes
   - {fileID: 1337811264}
   - {fileID: 2146058102}
   - {fileID: 573037136}
@@ -1116,10 +1216,17 @@ RectTransform:
   m_Father: {fileID: 1337811264}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
+  m_AnchorMin: {x: 0.020603957, y: 0.739}
+  m_AnchorMax: {x: 0.37, y: 0.9615913}
+  m_AnchoredPosition: {x: 0.6118164, y: -0.5670929}
+  m_SizeDelta: {x: -12.926697, y: -21.749695}
+=======
   m_AnchorMin: {x: 0.15212256, y: 0.7653768}
   m_AnchorMax: {x: 0.8968775, y: 1}
   m_AnchoredPosition: {x: 2.5080414, y: 1.3502655}
   m_SizeDelta: {x: -5.0161133, y: -3.5193787}
+>>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1208840795
 MonoBehaviour:
@@ -1324,7 +1431,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1191859323}
+<<<<<<< Updated upstream
+  m_RootOrder: 4
+=======
   m_RootOrder: 3
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1376,12 +1487,21 @@ RectTransform:
   m_Children:
   - {fileID: 1208840794}
   m_Father: {fileID: 1191859323}
+<<<<<<< Updated upstream
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.3987292, y: 0.53900003}
+  m_AnchorMax: {x: 0.808604, y: 1}
+  m_AnchoredPosition: {x: -3.214798, y: 1.3800354}
+  m_SizeDelta: {x: -10.169693, y: -3.2400503}
+=======
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.38562497, y: 0.5417408}
   m_AnchorMax: {x: 0.56700003, y: 0.878}
   m_AnchoredPosition: {x: 0.35479736, y: 1.9299927}
   m_SizeDelta: {x: -0.7098, y: 3.8590012}
+>>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1337811265
 MonoBehaviour:
@@ -1584,10 +1704,17 @@ RectTransform:
   m_Father: {fileID: 2146058102}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
+  m_AnchorMin: {x: 0.019276174, y: 0.77400005}
+  m_AnchorMax: {x: 0.35700002, y: 0.9622062}
+  m_AnchoredPosition: {x: 3.392395, y: 1.6018524}
+  m_SizeDelta: {x: -6.7846, y: -2.7963}
+=======
   m_AnchorMin: {x: 0.31483996, y: 0.767}
   m_AnchorMax: {x: 0.95900005, y: 1}
   m_AnchoredPosition: {x: -2.0812988, y: 0.6832886}
   m_SizeDelta: {x: -3.9526443, y: -1.3720722}
+>>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1483652986
 MonoBehaviour:
@@ -1732,7 +1859,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1191859323}
+<<<<<<< Updated upstream
+  m_RootOrder: 5
+=======
   m_RootOrder: 4
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.86950004, y: 0.878}
   m_AnchorMax: {x: 0.92625004, y: 0.96766686}
@@ -2107,7 +2238,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1191859323}
+<<<<<<< Updated upstream
+  m_RootOrder: 6
+=======
   m_RootOrder: 5
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.027, y: 0.878}
   m_AnchorMax: {x: 0.08441666, y: 0.96766686}
@@ -2390,12 +2525,21 @@ RectTransform:
   m_Children:
   - {fileID: 1483652985}
   m_Father: {fileID: 1191859323}
+<<<<<<< Updated upstream
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5686042, y: 0.10462963}
+  m_AnchorMax: {x: 0.9515625, y: 0.53900003}
+  m_AnchoredPosition: {x: 2.162201, y: 1.7160034}
+  m_SizeDelta: {x: -1.3617, y: 2.7280006}
+=======
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.57583344, y: 0.162}
   m_AnchorMax: {x: 0.796125, y: 0.53425926}
   m_AnchoredPosition: {x: 1.8430176, y: -0.15600586}
   m_SizeDelta: {x: -3.6859999, y: -0.31200027}
+>>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2146058103
 MonoBehaviour:
