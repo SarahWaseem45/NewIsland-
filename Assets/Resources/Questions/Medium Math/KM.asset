@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: KM
   m_EditorClassIdentifier: 
-  _info: Which shape has four equal sides?
+  _info: 'What is the perimeter of a square with side 6 cm?
+
+'
   _answers:
-  - _info: Triangle
+  - _info: 36
     _isCorrect: 0
-  - _info: Rectangle
+  - _info: 18
     _isCorrect: 0
-  - _info: Square
+  - _info: 24
     _isCorrect: 1
+  - _info: 12
+    _isCorrect: 0
   _useTimer: 1
   _timer: 7
   _answerType: 1

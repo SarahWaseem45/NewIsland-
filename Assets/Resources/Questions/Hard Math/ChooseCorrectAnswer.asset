@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: ChooseCorrectAnswer
   m_EditorClassIdentifier: 
-  _info: hello
+  _info: 'Solve: (2x + 3 = 11), find x'
   _answers:
-  - _info: 2/3
+  - _info: 6
     _isCorrect: 0
-  - _info: 3/6
+  - _info: 4
     _isCorrect: 1
-  - _info: 4/5
+  - _info: 5
     _isCorrect: 0
-  - _info: 5/8
+  - _info: 3
     _isCorrect: 0
   _useTimer: 1
   _timer: 8

@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: TallestMountain
   m_EditorClassIdentifier: 
-  _info: What is the sum of 456 and 789?
+  _info: What is the sum of angles in a triangle?
   _answers:
-  - _info: 1140
+  - _info: 90
     _isCorrect: 0
-  - _info: 1235
-    _isCorrect: 0
-  - _info: 1245
+  - _info: 180
     _isCorrect: 1
-  - _info: 1345
+  - _info: 270
+    _isCorrect: 0
+  - _info: 360
     _isCorrect: 0
   _useTimer: 1
   _timer: 25

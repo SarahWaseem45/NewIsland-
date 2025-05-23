@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: MoonRadius
   m_EditorClassIdentifier: 
-  _info: Which number is even?
+  _info: What is 60% of 150?
   _answers:
-  - _info: 17
+  - _info: 60
     _isCorrect: 0
-  - _info: 23
-    _isCorrect: 0
-  - _info: 31
-    _isCorrect: 0
-  - _info: 42
+  - _info: 90
     _isCorrect: 1
+  - _info: 80
+    _isCorrect: 0
+  - _info: 100
+    _isCorrect: 0
   _useTimer: 1
   _timer: 10
   _answerType: 1
