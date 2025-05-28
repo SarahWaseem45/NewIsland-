@@ -23,16 +23,19 @@ public class GrammarQues : MonoBehaviour
     public Text grammarSentenceText;
     public ToggleGroup toggleGroup;
     public List<Text> toggleTextList;
-    public List<Toggle> toggleList; // Add reference to toggle components
+    public List<Toggle> toggleList;
     public GameObject goNextButton;
     public Image imageHighlight;
 
+    public Text scoreText; // ✅ Add this in the Inspector
     public AudioClip acCorrect;
     public AudioClip acWrong;
 
     private AudioSource _audioSource;
     private int _currentQuestionIndex = -1;
     private int _correctAnswersCount = 0;
+    private int _score = 0; // ✅ Track score
+
     private Text _textOptionSelected;
 
     private void Awake()
@@ -42,6 +45,7 @@ public class GrammarQues : MonoBehaviour
 
     void Start()
     {
+        UpdateScoreText(); // ✅ Initialize score display
         ShowNextGrammarQuestion();
     }
 
@@ -57,7 +61,6 @@ public class GrammarQues : MonoBehaviour
 
         GrammarQuestion q = grammarQuestions[_currentQuestionIndex];
 
-        // Setup UI
         imageQuestion.sprite = q.image;
         imageQuestion.SetNativeSize();
         imageQuestion.gameObject.SetActive(true);
@@ -73,7 +76,6 @@ public class GrammarQues : MonoBehaviour
             toggleTextList[i].text = q.options[i];
         }
 
-        //  Ensure toggles are unticked when new question shows
         foreach (Toggle t in toggleList)
         {
             t.isOn = false;
@@ -104,22 +106,33 @@ public class GrammarQues : MonoBehaviour
 
         if (selected == q.correctAnswer)
         {
-            imageHighlight.color = new Color32(41, 118, 6, 86); // Green
+            imageHighlight.color = new Color32(41, 118, 6, 86);
             _audioSource.clip = acCorrect;
             _correctAnswersCount++;
+            _score += 10; // ✅ Add score for correct
         }
         else
         {
-            imageHighlight.color = new Color32(118, 11, 7, 86); // Red
+            imageHighlight.color = new Color32(118, 11, 7, 86);
             _audioSource.clip = acWrong;
+            _score -= 5; // ✅ Deduct score for wrong
         }
+
+        UpdateScoreText(); // ✅ Refresh UI
 
         _audioSource.Play();
         imageHighlight.gameObject.SetActive(true);
-         toggleGroup.SetAllTogglesOff(true);
-        
+        toggleGroup.SetAllTogglesOff(true);
 
         StartCoroutine(WaitBeforeNext());
+    }
+
+    private void UpdateScoreText() // ✅ Score display logic
+    {
+        if (scoreText != null)
+        {
+            scoreText.text = "Score: " + _score;
+        }
     }
 
     private IEnumerator WaitBeforeNext()
@@ -132,7 +145,6 @@ public class GrammarQues : MonoBehaviour
         toggleGroup.gameObject.SetActive(false);
         grammarSentenceText.gameObject.SetActive(false);
         instructionText.gameObject.SetActive(false);
-       
 
         yield return new WaitForSeconds(0.3f);
 
@@ -142,6 +154,7 @@ public class GrammarQues : MonoBehaviour
     private void GameOver()
     {
         PlayerPrefs.SetInt("CorrectAnswers", _correctAnswersCount);
+        PlayerPrefs.SetInt("FinalScore", _score); // ✅ Optional: save score
         SceneManager.LoadScene("End");
     }
 }

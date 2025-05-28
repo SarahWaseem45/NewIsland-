@@ -17,6 +17,9 @@ public class Questions : MonoBehaviour
     public List<Text> toggleTextList;
     public AudioClip acCorrect;
     public AudioClip acWrong;
+    public Text scoreText; // Assign this in the Inspector
+private int _score = 0; // Track current score
+
 
     [System.Serializable]
     public class QuestionOptions
@@ -58,37 +61,48 @@ public class Questions : MonoBehaviour
 
     #region Custom Methods
 
-    public void OnNextClick()
+  public void OnNextClick()
+{
+    goNextButton.SetActive(false);
+
+    textQuestion.text = _correctAnswer;
+
+    Vector2 rect = imageHighlight.GetComponent<RectTransform>().anchoredPosition;
+    Vector2 targetRect = _textOptionSelected.transform.parent.GetComponent<RectTransform>().anchoredPosition;
+    rect.x = targetRect.x;
+    rect.y = targetRect.y;
+    imageHighlight.GetComponent<RectTransform>().anchoredPosition = rect;
+
+    bool isCorrect = CheckCorrectAnswer();
+
+    CheckAnswer(isCorrect); // ✅ Add this line to apply score
+
+    if (isCorrect)
     {
-        goNextButton.SetActive(false);
-
-        textQuestion.text = _correctAnswer;
-
-        Vector2 rect = imageHighlight.GetComponent<RectTransform>().anchoredPosition;
-        Vector2 targetRect = _textOptionSelected.transform.parent.GetComponent<RectTransform>().anchoredPosition;
-        rect.x = targetRect.x;
-        rect.y = targetRect.y;
-        imageHighlight.GetComponent<RectTransform>().anchoredPosition = rect;
-
-        bool isCorrect = CheckCorrectAnswer();
-
-        if (isCorrect)
-        {
-            imageHighlight.color = new Color32(41, 118, 6, 86);
-            _audioSource.clip = acCorrect;
-        }
-        else
-        {
-            imageHighlight.color = new Color32(118, 11, 7, 86);
-            _audioSource.clip = acWrong;
-        }
-
-        _audioSource.Play();
-
-        imageHighlight.gameObject.SetActive(true);
-
-        StartCoroutine(HideQuestion());
+        imageHighlight.color = new Color32(41, 118, 6, 86);
+        _audioSource.clip = acCorrect;
     }
+    else
+    {
+        imageHighlight.color = new Color32(118, 11, 7, 86);
+        _audioSource.clip = acWrong;
+    }
+
+    _audioSource.Play();
+
+    imageHighlight.gameObject.SetActive(true);
+
+    StartCoroutine(HideQuestion());
+}
+
+private void UpdateScoreText()
+{
+    if (scoreText != null)
+    {
+        scoreText.text = "Score: " + _score;
+    }
+}
+
 
     private IEnumerator HideQuestion()
     {
@@ -150,6 +164,20 @@ public class Questions : MonoBehaviour
             toggleTextList[i].text = _optionAnswers[i];
         }
     }
+    private void CheckAnswer(bool isCorrect)
+{
+    if (isCorrect)
+    {
+        _score += 10;
+    }
+    else
+    {
+        _score -= 5;
+    }
+
+    UpdateScoreText(); // Update UI
+}
+
 
     private bool CheckCorrectAnswer()
     {
