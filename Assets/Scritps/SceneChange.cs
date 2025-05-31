@@ -63,4 +63,12 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene("EasyGK");
     }
+    public void MediumGK()
+    {
+        SceneManager.LoadScene("MediumGK");
+    }
+    public void HardGK()
+    {
+        SceneManager.LoadScene("HardGK");
+    }
 }
