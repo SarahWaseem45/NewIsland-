@@ -387,7 +387,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: -120}
+  m_AnchoredPosition: {x: 0, y: -120}
   m_SizeDelta: {x: -282.365, y: 306.8183}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &160180588
@@ -1949,7 +1949,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.87900007, y: 0.82655567}
   m_AnchorMax: {x: 0.92475015, y: 0.9176668}
-  m_AnchoredPosition: {x: 4.090026, y: -1.1600037}
+  m_AnchoredPosition: {x: 4.0898438, y: -1.1600342}
   m_SizeDelta: {x: -49.8194, y: -60.32}
   m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!114 &1057702926
@@ -4088,7 +4088,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0015258789, y: -150.91003}
+  m_AnchoredPosition: {x: -0.0014648438, y: -150.91003}
   m_SizeDelta: {x: -282.36, y: -551.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2056051201
@@ -4151,6 +4151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 207984488}
+  blurPanel: {fileID: 0}
   timerText: {fileID: 0}
   questionText: {fileID: 0}
 --- !u!4 &2084987800
