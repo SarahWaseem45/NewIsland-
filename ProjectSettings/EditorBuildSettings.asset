@@ -4,56 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/loadscene.unity
-    guid: d5c51871b5c2192468f7b36598175f68
-  - enabled: 1
-    path: Assets/Scenes/islands.unity
-    guid: 511688edaa86a164eab07a2990255574
-  - enabled: 1
-    path: Assets/Scenes/Level 1.unity
-    guid: fc1a71d7dbbfadb49b025653e9069834
-  - enabled: 1
-    path: Assets/Scenes/Level 2.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/Scenes/level 3.unity
-    guid: 9e83fe536db4a394d82620d8ccb1acf5
-  - enabled: 1
-    path: Assets/Scenes/Easy Math.unity
-    guid: 448337482017e0a46a993b926519fc8d
-  - enabled: 1
-    path: Assets/Scenes/EasyGK.unity
-    guid: d785fada08d23c54fadc9000a17b9593
-  - enabled: 1
-    path: Assets/Scenes/EasyGrammar.unity
-    guid: 1b36f10dab62d5747b6cfc7bc68f4a13
-  - enabled: 1
-    path: Assets/Scenes/EasySpellGame.unity
-    guid: c9de8a2cbcca5aa4293a5a6c1cf67bbd
-  - enabled: 1
-    path: Assets/Scenes/Hard Math.unity
-    guid: 73b4d699d01415944bae98af90c08adf
-  - enabled: 1
-    path: Assets/Scenes/HardGK.unity
-    guid: b8de2536a43c1a54da06be5d022e5de4
-  - enabled: 1
-    path: Assets/Scenes/HardGrammar.unity
-    guid: 06ff6fde7e2a97540b953361ab7a14ad
-  - enabled: 1
-    path: Assets/Scenes/HardSpellGame.unity
-    guid: e651055b9b4ff884ba509256f2e1858f
-  - enabled: 1
-    path: Assets/Scenes/Medium Math.unity
-    guid: 03b50452abfcb23448bf5a097fcabd27
-  - enabled: 1
-    path: Assets/Scenes/MediumGK.unity
-    guid: c53b926ff1199ca43b5b0301767acb1a
-  - enabled: 1
-    path: Assets/Scenes/MediumGrammar.unity
-    guid: e819eebafcb771147a316fe7b149b501
-  - enabled: 1
-    path: Assets/Scenes/MediumSpellGame.unity
-    guid: 3ede9c042f5bab048842dc0d3ab4f5e1
+  m_Scenes: []
   m_configObjects: {}

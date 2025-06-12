@@ -71,4 +71,8 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene("HardGK");
     }
+     public void SettingIcon()
+    {
+        SceneManager.LoadScene("SettingScene");
+    }
 }
