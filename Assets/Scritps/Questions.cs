@@ -18,7 +18,12 @@ public class Questions : MonoBehaviour
     public AudioClip acCorrect;
     public AudioClip acWrong;
     public Text scoreText; // Assign this in the Inspector
-private int _score = 0; // Track current score
+    private int _score = 0; // Track current score
+
+  public GameObject gameOverPanel;
+public Text finalScoreText;
+public Text highScoreText;
+
 
 
     [System.Serializable]
@@ -199,11 +204,24 @@ private void UpdateScoreText()
         _textOptionSelected = t;
     }
 
-    private void GameOver()
+     private void GameOver()
+{
+    PlayerPrefs.SetInt("CorrectAnswers", _correctAnswersCount);
+    PlayerPrefs.SetInt("FinalScore", _score);
+
+    int highScore = PlayerPrefs.GetInt("HighScore", 0);
+    if (_score > highScore)
     {
-        PlayerPrefs.SetInt("CorrectAnswers", _correctAnswersCount);
-        SceneManager.LoadScene("End");
+        highScore = _score;
+        PlayerPrefs.SetInt("HighScore", highScore);
     }
+
+    finalScoreText.text = "Your Score: " + _score;
+    highScoreText.text = "High Score: " + highScore;
+
+    gameOverPanel.SetActive(true); // ✅ Show the panel
+}
+
 
     #endregion
 }

@@ -37,6 +37,12 @@ public class GrammarQues : MonoBehaviour
     private int _score = 0; // ✅ Track score
 
     private Text _textOptionSelected;
+    private int _wrongAnswersCount = 0;
+    public GameObject gameOverPanel;
+public Text finalScoreText;
+public Text highScoreText;
+
+
 
     private void Awake()
     {
@@ -95,37 +101,44 @@ public class GrammarQues : MonoBehaviour
     }
 
     public void OnNextClick()
+{
+    GrammarQuestion q = grammarQuestions[_currentQuestionIndex];
+    string selected = _textOptionSelected.text;
+    grammarSentenceText.text = q.completedSentence;
+
+    RectTransform targetRect = _textOptionSelected.transform.parent.GetComponent<RectTransform>();
+    RectTransform highlightRect = imageHighlight.GetComponent<RectTransform>();
+    highlightRect.anchoredPosition = targetRect.anchoredPosition;
+
+    if (selected == q.correctAnswer)
     {
-        GrammarQuestion q = grammarQuestions[_currentQuestionIndex];
-        string selected = _textOptionSelected.text;
-        grammarSentenceText.text = q.completedSentence;
-
-        RectTransform targetRect = _textOptionSelected.transform.parent.GetComponent<RectTransform>();
-        RectTransform highlightRect = imageHighlight.GetComponent<RectTransform>();
-        highlightRect.anchoredPosition = targetRect.anchoredPosition;
-
-        if (selected == q.correctAnswer)
-        {
-            imageHighlight.color = new Color32(41, 118, 6, 86);
-            _audioSource.clip = acCorrect;
-            _correctAnswersCount++;
-            _score += 10; // ✅ Add score for correct
-        }
-        else
-        {
-            imageHighlight.color = new Color32(118, 11, 7, 86);
-            _audioSource.clip = acWrong;
-            _score -= 5; // ✅ Deduct score for wrong
-        }
-
-        UpdateScoreText(); // ✅ Refresh UI
-
-        _audioSource.Play();
-        imageHighlight.gameObject.SetActive(true);
-        toggleGroup.SetAllTogglesOff(true);
-
-        StartCoroutine(WaitBeforeNext());
+        imageHighlight.color = new Color32(41, 118, 6, 86);
+        _audioSource.clip = acCorrect;
+        _correctAnswersCount++;
+        _score += 10;
     }
+    else
+    {
+        imageHighlight.color = new Color32(118, 11, 7, 86);
+        _audioSource.clip = acWrong;
+        _score -= 5;
+        _wrongAnswersCount++; // ✅ Increase wrong answers
+    }
+
+    UpdateScoreText();
+    _audioSource.Play();
+    imageHighlight.gameObject.SetActive(true);
+    toggleGroup.SetAllTogglesOff(true);
+
+    // ✅ Check if 5 wrong answers — end game early
+    if (_wrongAnswersCount >= 5)
+    {
+        GameOver(); // Ends game immediately
+        return;
+    }
+
+    StartCoroutine(WaitBeforeNext());
+}
 
     private void UpdateScoreText() // ✅ Score display logic
     {
@@ -151,10 +164,23 @@ public class GrammarQues : MonoBehaviour
         ShowNextGrammarQuestion();
     }
 
-    private void GameOver()
+   private void GameOver()
+{
+    PlayerPrefs.SetInt("CorrectAnswers", _correctAnswersCount);
+    PlayerPrefs.SetInt("FinalScore", _score);
+
+    int highScore = PlayerPrefs.GetInt("HighScore", 0);
+    if (_score > highScore)
     {
-        PlayerPrefs.SetInt("CorrectAnswers", _correctAnswersCount);
-        PlayerPrefs.SetInt("FinalScore", _score); // ✅ Optional: save score
-        SceneManager.LoadScene("End");
+        highScore = _score;
+        PlayerPrefs.SetInt("HighScore", highScore);
     }
+
+    finalScoreText.text = "Your Score: " + _score;
+    highScoreText.text = "High Score: " + highScore;
+
+    gameOverPanel.SetActive(true); // ✅ Show the panel
+}
+
+
 }
