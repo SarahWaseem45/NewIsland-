@@ -1,38 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class VolumeValueChange : MonoBehaviour
 {
-   
-    private AudioSource AudioSource;
-    private Slider volumeSlider;
-    public GameObject ObjectMusic;
-    private float musicVolume = 0f;
+    private AudioSource audioSource;
+    public Slider volumeSlider;
 
-	
-	void Start () {
+    void Start()
+    {
+        GameObject musicObj = GameObject.FindWithTag("GameMusic");
+        audioSource = musicObj.GetComponent<AudioSource>();
 
-       ObjectMusic = GameObject.FindWithTag("GameMusic");
-       AudioSource = ObjectMusic.GetComponent<AudioSource>();
+        float savedVolume = PlayerPrefs.GetFloat("volume", 1f);
+        audioSource.volume = savedVolume;
+        volumeSlider.value = savedVolume;
 
+        volumeSlider.onValueChanged.AddListener(SetVolume);
+    }
 
-        musicVolume = PlayerPrefs.GetFloat("volume");
-        AudioSource.volume = musicVolume;
-        volumeSlider .value = musicVolume;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-        
-       AudioSource.volume = musicVolume;
-        PlayerPrefs.SetFloat("volume", musicVolume);
-	}
-
-    
     public void SetVolume(float volume)
     {
-        musicVolume = volume;
+        audioSource.volume = volume;
+        PlayerPrefs.SetFloat("volume", volume);
     }
 }

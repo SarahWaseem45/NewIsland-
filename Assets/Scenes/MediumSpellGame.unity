@@ -1581,6 +1581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 1034137972}
+  blurPanel: {fileID: 0}
   timerText: {fileID: 0}
   questionText: {fileID: 0}
 --- !u!4 &969153852
@@ -2091,10 +2092,10 @@ RectTransform:
   m_Father: {fileID: 1701154606}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 224.1, y: -50}
-  m_SizeDelta: {x: 225, y: 60}
+  m_AnchorMin: {x: 0.28375003, y: 0.5133333}
+  m_AnchorMax: {x: 0.56625, y: 0.6466667}
+  m_AnchoredPosition: {x: -1.7238159, y: 0}
+  m_SizeDelta: {x: -1, y: 0}
   m_Pivot: {x: 0.7238319, y: 0.49999997}
 --- !u!114 &1217930217
 MonoBehaviour:
