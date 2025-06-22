@@ -13,7 +13,7 @@ public class SceneChange : MonoBehaviour
     }
      public void EasyMath()
     {
-        SceneManager.LoadScene("Easy Math"); 
+        SceneManager.LoadScene("EasyMath1 1"); 
     }
      public void SpellingScene()
     {
@@ -25,11 +25,11 @@ public class SceneChange : MonoBehaviour
     }
      public void MediumMath()
     {
-        SceneManager.LoadScene("Medium Math"); 
+        SceneManager.LoadScene("MediumMath1 2"); 
     }
     public void HardMath()
     {
-        SceneManager.LoadScene("Hard Math"); 
+        SceneManager.LoadScene("HardMath1"); 
     }
      public void EasySpellGame()
     {

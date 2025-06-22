@@ -22,7 +22,10 @@ public class Questions : MonoBehaviour
 
   public GameObject gameOverPanel;
 public Text finalScoreText;
-public Text highScoreText;
+    public Text highScoreText;
+public GameObject rightPanel;
+public GameObject wrongPanel;
+
 
 
 
@@ -80,25 +83,27 @@ public Text highScoreText;
 
     bool isCorrect = CheckCorrectAnswer();
 
-    CheckAnswer(isCorrect); // ✅ Add this line to apply score
+    CheckAnswer(isCorrect); // ✅ Update score
 
     if (isCorrect)
     {
         imageHighlight.color = new Color32(41, 118, 6, 86);
         _audioSource.clip = acCorrect;
+        ShowFeedbackPanel(rightPanel); // ✅ Show right panel
     }
     else
     {
         imageHighlight.color = new Color32(118, 11, 7, 86);
         _audioSource.clip = acWrong;
+        ShowFeedbackPanel(wrongPanel); // ✅ Show wrong panel
     }
 
     _audioSource.Play();
-
     imageHighlight.gameObject.SetActive(true);
 
     StartCoroutine(HideQuestion());
 }
+
 
 private void UpdateScoreText()
 {
@@ -220,6 +225,17 @@ private void UpdateScoreText()
     highScoreText.text = "High Score: " + highScore;
 
     gameOverPanel.SetActive(true); // ✅ Show the panel
+}
+private void ShowFeedbackPanel(GameObject panel)
+{
+    panel.SetActive(true);
+    StartCoroutine(HidePanelAfterDelay(panel, 1.5f));
+}
+
+private IEnumerator HidePanelAfterDelay(GameObject panel, float delay)
+{
+    yield return new WaitForSeconds(delay);
+    panel.SetActive(false);
 }
 
 

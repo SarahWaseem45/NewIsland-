@@ -10,21 +10,28 @@ public class QuestionManager : MonoBehaviour
     {
         LoadQuestionsForLevel();
     }
+void LoadQuestionsForLevel()
+{
+    currentQuestions?.Clear();
 
-    void LoadQuestionsForLevel()
+    int currentLevel = PlayerPrefs.GetInt("CurrentLevel", 1);
+    string folderName = currentLevel == 2 ? "Medium Math" :
+                        currentLevel == 3 ? "Hard Math" : "Easy Math";
+
+    Debug.Log($"[LoadQuestions] Loading from Resources/{folderName}");
+
+    Question[] loadedQuestions = Resources.LoadAll<Question>(folderName);
+    Debug.Log($"[LoadQuestions] Found {loadedQuestions.Length} questions");
+
+    if (loadedQuestions.Length == 0)
     {
-        int currentLevel = PlayerPrefs.GetInt("CurrentLevel", 1);
-        string path = $"Questions/Level{currentLevel}"; // e.g. Questions/Level1
-
-        Question[] loadedQuestions = Resources.LoadAll<Question>(path);
-        if (loadedQuestions.Length == 0)
-        {
-            Debug.LogWarning($"No questions found in Resources/{path}");
-            return;
-        }
-
-        currentQuestions = new List<Question>(loadedQuestions);
+        Debug.LogWarning($"No questions found in Resources/{folderName}");
+        return;
     }
+
+    currentQuestions = new List<Question>(loadedQuestions);
+}
+
 
     public Question GetRandomQuestion()
     {
@@ -40,6 +47,7 @@ public class QuestionManager : MonoBehaviour
     public void NextLevel()
     {
         int nextLevel = PlayerPrefs.GetInt("CurrentLevel", 1) + 1;
+
         if (nextLevel > 3)
         {
             Debug.Log("Game Over! All Levels Completed.");
@@ -47,6 +55,6 @@ public class QuestionManager : MonoBehaviour
         }
 
         PlayerPrefs.SetInt("CurrentLevel", nextLevel);
-        SceneManager.LoadScene("Level" + nextLevel); // Make sure scene names are Level1, Level2, etc.
+        SceneManager.LoadScene("Level" + nextLevel);
     }
 }

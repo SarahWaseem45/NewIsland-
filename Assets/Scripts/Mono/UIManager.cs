@@ -56,6 +56,10 @@ public struct UIElements
 
     [SerializeField] RectTransform finishUIElements;
     public RectTransform FinishUIElements { get { return finishUIElements; } }
+
+    [SerializeField] GameObject scorePanel;
+public GameObject ScorePanel { get { return scorePanel; } }
+
 }
 public class UIManager : MonoBehaviour {
 
@@ -105,11 +109,18 @@ public class UIManager : MonoBehaviour {
     /// <summary>
     /// Function that is called when the script instance is being loaded.
     /// </summary>
-    void Start()
-    {
-        UpdateScoreUI();
-        resStateParaHash = Animator.StringToHash("ScreenState");
-    }
+   void Start()
+{
+    UpdateScoreUI();
+    resStateParaHash = Animator.StringToHash("ScreenState");
+
+    // Hide final UI at start
+    uIElements.ScorePanel.SetActive(false);
+    uIElements.HighScoreText.gameObject.SetActive(false);
+    uIElements.ResolutionScreenAnimator.gameObject.SetActive(true); // keep animator enabled for gameplay
+    uIElements.MainCanvasGroup.alpha = 1;
+    uIElements.MainCanvasGroup.blocksRaycasts = true;
+}
 
     #endregion
 
@@ -166,15 +177,33 @@ public class UIManager : MonoBehaviour {
                 uIElements.ResolutionStateInfoText.text = "WRONG!";
                 uIElements.ResolutionScoreText.text = "-" + score;
                 break;
-            case ResolutionScreenType.Finish:
-                uIElements.ResolutionBG.color = parameters.FinalBGColor;
-                uIElements.ResolutionStateInfoText.text = "FINAL SCORE";
+         case ResolutionScreenType.Finish:
+    // Hide main gameplay UI
+    uIElements.MainCanvasGroup.alpha = 0; // hides the main UI
+    uIElements.MainCanvasGroup.blocksRaycasts = false;
 
-                StartCoroutine(CalculateScore());
-                uIElements.FinishUIElements.gameObject.SetActive(true);
-                uIElements.HighScoreText.gameObject.SetActive(true);
-                uIElements.HighScoreText.text = ((highscore > events.StartupHighscore) ? "<color=yellow>new </color>" : string.Empty) + "Highscore: " + highscore;
-                break;
+    // Hide resolution animator UI
+    uIElements.ResolutionScreenAnimator.gameObject.SetActive(false);
+
+    // Set final background color
+    uIElements.ResolutionBG.color = parameters.FinalBGColor;
+    uIElements.ResolutionStateInfoText.text = "FINAL SCORE";
+
+    // Show score panel and texts
+    uIElements.ScorePanel.SetActive(true);
+    uIElements.HighScoreText.gameObject.SetActive(true);
+
+    // Start counting final score
+    StartCoroutine(CalculateScore());
+
+    // Show high score info
+    uIElements.HighScoreText.text =
+        ((PlayerPrefs.GetInt(GameUtility.SavePrefKey) > events.StartupHighscore)
+        ? "<color=yellow>new </color>" : string.Empty) +
+        "Highscore: " + PlayerPrefs.GetInt(GameUtility.SavePrefKey);
+
+    break;
+
         }
     }
 

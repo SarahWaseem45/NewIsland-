@@ -40,7 +40,10 @@ public class GrammarQues : MonoBehaviour
     private int _wrongAnswersCount = 0;
     public GameObject gameOverPanel;
 public Text finalScoreText;
-public Text highScoreText;
+    public Text highScoreText;
+public GameObject rightPanel;
+public GameObject wrongPanel;
+
 
 
 
@@ -100,7 +103,7 @@ public Text highScoreText;
         goNextButton.SetActive(true);
     }
 
-    public void OnNextClick()
+   public void OnNextClick()
 {
     GrammarQuestion q = grammarQuestions[_currentQuestionIndex];
     string selected = _textOptionSelected.text;
@@ -116,13 +119,17 @@ public Text highScoreText;
         _audioSource.clip = acCorrect;
         _correctAnswersCount++;
         _score += 10;
+
+        ShowFeedbackPanel(rightPanel); // ✅ show RIGHT panel
     }
     else
     {
         imageHighlight.color = new Color32(118, 11, 7, 86);
         _audioSource.clip = acWrong;
         _score -= 5;
-        _wrongAnswersCount++; // ✅ Increase wrong answers
+        _wrongAnswersCount++;
+
+        ShowFeedbackPanel(wrongPanel); // ✅ show WRONG panel
     }
 
     UpdateScoreText();
@@ -130,15 +137,15 @@ public Text highScoreText;
     imageHighlight.gameObject.SetActive(true);
     toggleGroup.SetAllTogglesOff(true);
 
-    // ✅ Check if 5 wrong answers — end game early
     if (_wrongAnswersCount >= 5)
     {
-        GameOver(); // Ends game immediately
+        GameOver();
         return;
     }
 
     StartCoroutine(WaitBeforeNext());
 }
+
 
     private void UpdateScoreText() // ✅ Score display logic
     {
@@ -164,23 +171,35 @@ public Text highScoreText;
         ShowNextGrammarQuestion();
     }
 
-   private void GameOver()
-{
-    PlayerPrefs.SetInt("CorrectAnswers", _correctAnswersCount);
-    PlayerPrefs.SetInt("FinalScore", _score);
-
-    int highScore = PlayerPrefs.GetInt("HighScore", 0);
-    if (_score > highScore)
+    private void GameOver()
     {
-        highScore = _score;
-        PlayerPrefs.SetInt("HighScore", highScore);
+        PlayerPrefs.SetInt("CorrectAnswers", _correctAnswersCount);
+        PlayerPrefs.SetInt("FinalScore", _score);
+
+        int highScore = PlayerPrefs.GetInt("HighScore", 0);
+        if (_score > highScore)
+        {
+            highScore = _score;
+            PlayerPrefs.SetInt("HighScore", highScore);
+        }
+
+        finalScoreText.text = "Your Score: " + _score;
+        highScoreText.text = "High Score: " + highScore;
+
+        gameOverPanel.SetActive(true); // ✅ Show the panel
     }
-
-    finalScoreText.text = "Your Score: " + _score;
-    highScoreText.text = "High Score: " + highScore;
-
-    gameOverPanel.SetActive(true); // ✅ Show the panel
+private void ShowFeedbackPanel(GameObject panel)
+{
+    panel.SetActive(true);
+    StartCoroutine(HidePanelAfterDelay(panel, 1.5f));
 }
+
+private IEnumerator HidePanelAfterDelay(GameObject panel, float delay)
+{
+    yield return new WaitForSeconds(delay);
+    panel.SetActive(false);
+}
+
 
 
 }

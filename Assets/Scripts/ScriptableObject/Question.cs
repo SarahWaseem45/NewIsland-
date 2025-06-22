@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[Serializable()]
+[Serializable]
 public struct Answer
 {
     [SerializeField] private string _info;
@@ -11,44 +11,40 @@ public struct Answer
     [SerializeField] private bool _isCorrect;
     public bool IsCorrect { get { return _isCorrect; } }
 }
-[CreateAssetMenu(fileName = "New Question", menuName = "Quiz/new Question")]
-public class Question : ScriptableObject {
 
-    public enum                 AnswerType                  { Multi, Single }
+[CreateAssetMenu(fileName = "New Question", menuName = "Quiz/New Question")]
+public class Question : ScriptableObject
+{
+    public enum AnswerType { Multi, Single }
 
-    [SerializeField] private    String      _info           = String.Empty;
-    public                      String      Info            { get { return _info; } }
+    [SerializeField] private string _info = string.Empty;
+    public string Info => _info;
 
-    [SerializeField]            Answer[]    _answers        = null;
-    public                      Answer[]    Answers         { get { return _answers; } }
+    [SerializeField] private Answer[] _answers = null;
+    public Answer[] Answers => _answers;
 
-    //Parameters
+    [SerializeField] private bool _useTimer = false;
+    public bool UseTimer => _useTimer;
 
-    [SerializeField] private    bool        _useTimer       = false;
-    public                      bool        UseTimer        { get { return _useTimer; } }
+    [SerializeField] private int _timer = 0;
+    public int Timer => _timer;
 
-    [SerializeField] private    int         _timer          = 0;
-    public                      int         Timer           { get { return _timer; } }
+    [SerializeField] private AnswerType _answerType = AnswerType.Multi;
+    public AnswerType GetAnswerType => _answerType;
 
-    [SerializeField] private    AnswerType  _answerType     = AnswerType.Multi;
-    public                      AnswerType  GetAnswerType   { get { return _answerType; } }
+    [SerializeField] private int _addScore = 10;
+    public int AddScore => _addScore;
 
-    [SerializeField] private    int         _addScore       = 10;
-    public                      int         AddScore        { get { return _addScore; } }
-
-    /// <summary>
-    /// Function that is called to collect and return correct answers indexes.
-    /// </summary>
-    public List<int> GetCorrectAnswers ()
+    public List<int> GetCorrectAnswers()
     {
-        List<int> CorrectAnswers = new List<int>();
-        for (int i = 0; i < Answers.Length; i++)
+        List<int> correctAnswers = new List<int>();
+        for (int i = 0; i < _answers.Length; i++)
         {
-            if (Answers[i].IsCorrect)
+            if (_answers[i].IsCorrect)
             {
-                CorrectAnswers.Add(i);
+                correctAnswers.Add(i);
             }
         }
-        return CorrectAnswers;
+        return correctAnswers;
     }
 }
