@@ -2129,7 +2129,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 26
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 7
     m_MaxSize: 40
     m_Alignment: 4
@@ -2682,95 +2682,96 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grammarQuestions:
   - image: {fileID: 21300000, guid: 4af72c7c63c89564888729d51266af18, type: 3}
-    sentenceWithBlank: 2+2 = ?
-    completedSentence: 4
+    sentenceWithBlank: What is the perimeter of a square with side 6 cm?
+    completedSentence: 18
     options:
-    - 11
-    - 2
-    - 4
+    - 36
+    - 18
+    - 24
+    - 12
+    correctAnswer: 18
+  - image: {fileID: 21300000, guid: f3e824ec048eb7a4ea2c6e8ecfb8c5ac, type: 3}
+    sentenceWithBlank: 'What is the next number in the sequence: 5, 10, 15, _?'
+    completedSentence: 20
+    options:
+    - 18
+    - 20
     - 22
-    correctAnswer: 4
-  - image: {fileID: 21300000, guid: 8cad44b353a941c469bd9c7033b3d251, type: 3}
-    sentenceWithBlank: What do we use to see far away?
-    completedSentence: Telescope
+    - 25
+    correctAnswer: 20
+  - image: {fileID: 21300000, guid: 908c2ee89e4902f4e815b098cfe1b66e, type: 3}
+    sentenceWithBlank: Which number is a multiple of both 3 and 4?
+    completedSentence: 12
     options:
-    - Binoculars
-    - 'Microscope '
-    - Telescope
-    - Periscope
-    correctAnswer: Telescope
-  - image: {fileID: 21300000, guid: 704179748948d7543a8580e15fe40657, type: 3}
-    sentenceWithBlank: What food is made from dough and cheese?
-    completedSentence: Pizza
+    - 6
+    - 9
+    - 12
+    - 14
+    correctAnswer: 12
+  - image: {fileID: 21300000, guid: 89b13fb9b22d762479750933c96f4f0a, type: 3}
+    sentenceWithBlank: 'What is the perimeter of a square with side 6 cm? '
+    completedSentence: 24
     options:
-    - Burger
-    - Chinese
-    - Dumplings
-    - Pizza
-    correctAnswer: Pizza
-  - image: {fileID: 21300000, guid: 4b5e031b714ee6041af920bdc49ee0e3, type: 3}
-    sentenceWithBlank: What shape has three sides?
-    completedSentence: Triangle
+    - 36
+    - 18
+    - 24
+    - 12
+    correctAnswer: 24
+  - image: {fileID: 21300000, guid: 67b5c520997d48e4ea4b7efdebbb57e7, type: 3}
+    sentenceWithBlank: If you have 10 apples and eat 3, how many apples are left?
+    completedSentence: 7
     options:
-    - Rectangle
-    - Triangle
-    - Circle
-    - Square
-    correctAnswer: Triangle
-  - image: {fileID: 21300000, guid: c05445fa808a23b4a9724e7d70cb5768, type: 3}
-    sentenceWithBlank: Which fruit is yellow and shaped like a crescent?
-    completedSentence: Banana
+    - 5
+    - 6
+    - 7
+    - 8
+    correctAnswer: 7
+  - image: {fileID: 21300000, guid: 311005a575eeb2743901a4f5e2a7250a, type: 3}
+    sentenceWithBlank: 'Round 465 to the nearest hundred:'
+    completedSentence: 500
     options:
-    - Mango
-    - Appricot
-    - Banana
-    - Guava
-    correctAnswer: Banana
-  - image: {fileID: 21300000, guid: 5e26b68ab0021584fbda69718cee92eb, type: 3}
-    sentenceWithBlank: Which planet do we live on?
-    completedSentence: Earth
+    - 400
+    - 500
+    - 450
+    - 600
+    correctAnswer: 500
+  - image: {fileID: 21300000, guid: 9a2ce5827c2740641a0cfd497e71acb3, type: 3}
+    sentenceWithBlank: What is 5% of 200?
+    completedSentence: 5
     options:
-    - Mars
-    - Jupitar
-    - Mercury
-    - Earth
-    correctAnswer: Earth
-  - image: {fileID: 21300000, guid: d93b7e9f7695c2e4ea489495e5888636, type: 3}
-    sentenceWithBlank: Which bird cannot fly?
-    completedSentence: Penguin
+    - 5
+    - 10
+    - 15
+    - 20
+    correctAnswer: 5
+  - image: {fileID: 21300000, guid: 4af72c7c63c89564888729d51266af18, type: 3}
+    sentenceWithBlank: If a triangle has sides of 5 cm, 5 cm, and 7 cm, what type
+      of triangle is it?
+    completedSentence: Isosceles
     options:
-    - Sparrow
-    - Penguin
-    - Peacock
-    - Eagle
-    correctAnswer: Penguin
-  - image: {fileID: 21300000, guid: 747d196a1a4a50c44884375e0c8c79b0, type: 3}
-    sentenceWithBlank: What do you use to tell the time?
-    completedSentence: Clock
+    - Equilateral
+    - Scalene
+    - Isosceles
+    - Right
+    correctAnswer: Isosceles
+  - image: {fileID: 21300000, guid: 945063bb6392e1b4691e26d77f484230, type: 3}
+    sentenceWithBlank: What is the place value of 7 in the number 375?
+    completedSentence: Tens
     options:
-    - Calender
-    - Clock
-    - Thermometer
-    - Compass
-    correctAnswer: Clock
-  - image: {fileID: 21300000, guid: a1b2889d11fab334d920635f78ae8cb4, type: 3}
-    sentenceWithBlank: Which insect makes honey?
-    completedSentence: Bee
+    - Tens
+    - Hundreds
+    - Ones
+    - Thousands
+    correctAnswer: Tens
+  - image: {fileID: 21300000, guid: e51d51d71c72e82418a15078d9218279, type: 3}
+    sentenceWithBlank: What is the sum of angles in a triangle?
+    completedSentence: 180
     options:
-    - Butterfly
-    - Ant
-    - Bee
-    - Mosquito
-    correctAnswer: Bee
-  - image: {fileID: 21300000, guid: 9f92ea9fc832cff4c9aef27de17bd463, type: 3}
-    sentenceWithBlank: What tool is used to cut paper?
-    completedSentence: Scissors
-    options:
-    - Ruler
-    - Glue
-    - Eraser
-    - Scissors
-    correctAnswer: Scissors
+    - 90
+    - 180
+    - 270
+    - 360
+    correctAnswer: 180
   imageQuestion: {fileID: 11931953}
   instructionText: {fileID: 1247599499}
   grammarSentenceText: {fileID: 1889829030}
@@ -4154,5 +4155,9 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1305938923}
+    - target: {fileID: 5235846835562030724, guid: 282a2482d1ad6e446b8ca792b308b49f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: crossmedium
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 282a2482d1ad6e446b8ca792b308b49f, type: 3}

@@ -18,4 +18,19 @@ public class SettingsPanelToggle : MonoBehaviour
         settingsPanel.SetActive(false);
         SceneManager.LoadScene("islands");
     }
+     public void BackButton1()
+    {
+        settingsPanel.SetActive(false);
+        SceneManager.LoadScene("Level 1");
+    }
+     public void BackButton2()
+    {
+        settingsPanel.SetActive(false);
+        SceneManager.LoadScene("Level 2");
+    }
+     public void BackButton3()
+    {
+        settingsPanel.SetActive(false);
+        SceneManager.LoadScene("level 3");
+    }
 }

@@ -17,7 +17,7 @@ MonoBehaviour:
   - _info: 5
     _isCorrect: 1
   - _info: 10
-    _isCorrect: 1
+    _isCorrect: 0
   - _info: 15
     _isCorrect: 0
   - _info: 20

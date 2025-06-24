@@ -15,11 +15,11 @@ MonoBehaviour:
   _info: What is the value of 5 tens + 3 ones?
   _answers:
   - _info: 53
-    _isCorrect: 1
+    _isCorrect: 0
   - _info: 50
     _isCorrect: 0
   - _info: 8
-    _isCorrect: 0
+    _isCorrect: 1
   - _info: 35
     _isCorrect: 0
   _useTimer: 0

@@ -1917,7 +1917,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 26
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 7
     m_MaxSize: 40
     m_Alignment: 4
@@ -3785,11 +3785,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1524685812033259911, guid: 79bb974964c3eb544a24fbc504ff829c, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 830.5555
+      value: 821.47
       objectReference: {fileID: 0}
     - target: {fileID: 1524685812033259911, guid: 79bb974964c3eb544a24fbc504ff829c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 699.8497
+      value: 574.1616
       objectReference: {fileID: 0}
     - target: {fileID: 1524685812033259911, guid: 79bb974964c3eb544a24fbc504ff829c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3821,11 +3821,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1524685812033259911, guid: 79bb974964c3eb544a24fbc504ff829c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 7.8424
+      value: -0.000031948
       objectReference: {fileID: 0}
     - target: {fileID: 1524685812033259911, guid: 79bb974964c3eb544a24fbc504ff829c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -10.4565
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 1524685812033259911, guid: 79bb974964c3eb544a24fbc504ff829c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

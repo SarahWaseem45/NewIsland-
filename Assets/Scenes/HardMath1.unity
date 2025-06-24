@@ -2121,9 +2121,9 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 26
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 7
-    m_MaxSize: 40
+    m_MaxSize: 100
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -2896,95 +2896,95 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grammarQuestions:
   - image: {fileID: 21300000, guid: 4af72c7c63c89564888729d51266af18, type: 3}
-    sentenceWithBlank: 2+2 = ?
+    sentenceWithBlank: 'Solve: (2x + 3 = 11), find x'
     completedSentence: 4
     options:
-    - 11
+    - 6
+    - 4
+    - 5
+    - 3
+    correctAnswer: 4
+  - image: {fileID: 21300000, guid: e51d51d71c72e82418a15078d9218279, type: 3}
+    sentenceWithBlank: What is the volume of a cube with side 4cm?
+    completedSentence: "64 cm\xB3"
+    options:
+    - 64
+    - "64 cm\xB3"
+    - "16 cm\xB3"
+    - "8 cm\xB3"
+    correctAnswer: Telescope
+  - image: {fileID: 21300000, guid: 610e84ea14d2b30418855c79fa6c9ef6, type: 3}
+    sentenceWithBlank: 'Find the mode: 2, 4, 4, 5, 6'
+    completedSentence: 4
+    options:
     - 2
     - 4
-    - 22
+    - 5
+    - 6
     correctAnswer: 4
-  - image: {fileID: 21300000, guid: 8cad44b353a941c469bd9c7033b3d251, type: 3}
-    sentenceWithBlank: What do we use to see far away?
-    completedSentence: Telescope
+  - image: {fileID: 21300000, guid: 311005a575eeb2743901a4f5e2a7250a, type: 3}
+    sentenceWithBlank: What is the next prime number after 29?
+    completedSentence: 31
     options:
-    - Binoculars
-    - 'Microscope '
-    - Telescope
-    - Periscope
-    correctAnswer: Telescope
-  - image: {fileID: 21300000, guid: 704179748948d7543a8580e15fe40657, type: 3}
-    sentenceWithBlank: What food is made from dough and cheese?
-    completedSentence: Pizza
+    - 30
+    - 31
+    - 32
+    - 33
+    correctAnswer: 31
+  - image: {fileID: 21300000, guid: 9a2ce5827c2740641a0cfd497e71acb3, type: 3}
+    sentenceWithBlank: 'The probability of getting a 3 on a dice is:'
+    completedSentence: 1/6
     options:
-    - Burger
-    - Chinese
-    - Dumplings
-    - Pizza
-    correctAnswer: Pizza
-  - image: {fileID: 21300000, guid: 4b5e031b714ee6041af920bdc49ee0e3, type: 3}
-    sentenceWithBlank: What shape has three sides?
-    completedSentence: Triangle
+    - 1/3
+    - 1/5
+    - 1/6
+    - 1/4
+    correctAnswer: 1/6
+  - image: {fileID: 21300000, guid: 2df1bf089135151429c5a631f2472488, type: 3}
+    sentenceWithBlank: What is 60% of 150?
+    completedSentence: 90
     options:
-    - Rectangle
-    - Triangle
-    - Circle
-    - Square
-    correctAnswer: Triangle
-  - image: {fileID: 21300000, guid: c05445fa808a23b4a9724e7d70cb5768, type: 3}
-    sentenceWithBlank: Which fruit is yellow and shaped like a crescent?
-    completedSentence: Banana
+    - 60
+    - 90
+    - 80
+    - 100
+    correctAnswer: 90
+  - image: {fileID: 21300000, guid: 4af72c7c63c89564888729d51266af18, type: 3}
+    sentenceWithBlank: "Solve: 2x \u2013 5 = 13"
+    completedSentence: 9
     options:
-    - Mango
-    - Appricot
-    - Banana
-    - Guava
-    correctAnswer: Banana
-  - image: {fileID: 21300000, guid: 5e26b68ab0021584fbda69718cee92eb, type: 3}
-    sentenceWithBlank: Which planet do we live on?
-    completedSentence: Earth
+    - 6
+    - 7
+    - 9
+    - 10
+    correctAnswer: 9
+  - image: {fileID: 21300000, guid: a2f93ca782289dd4ea8b43544a2dd720, type: 3}
+    sentenceWithBlank: Convert 1.2 km into meters
+    completedSentence: 1200
     options:
-    - Mars
-    - Jupitar
-    - Mercury
-    - Earth
-    correctAnswer: Earth
-  - image: {fileID: 21300000, guid: d93b7e9f7695c2e4ea489495e5888636, type: 3}
-    sentenceWithBlank: Which bird cannot fly?
-    completedSentence: Penguin
+    - 100
+    - 1200
+    - 120
+    - 12
+    correctAnswer: 1200
+  - image: {fileID: 21300000, guid: 3c227f2aea2bfa34a89985abdef1b410, type: 3}
+    sentenceWithBlank: Find x if 5x = 100
+    completedSentence: 20
     options:
-    - Sparrow
-    - Penguin
-    - Peacock
-    - Eagle
-    correctAnswer: Penguin
-  - image: {fileID: 21300000, guid: 747d196a1a4a50c44884375e0c8c79b0, type: 3}
-    sentenceWithBlank: What do you use to tell the time?
-    completedSentence: Clock
+    - 20
+    - 25
+    - 10
+    - 15
+    correctAnswer: 20
+  - image: {fileID: 21300000, guid: 89b13fb9b22d762479750933c96f4f0a, type: 3}
+    sentenceWithBlank: 'What is the range of the numbers: 10, 15, 20, 25?'
+    completedSentence: 15
     options:
-    - Calender
-    - Clock
-    - Thermometer
-    - Compass
-    correctAnswer: Clock
-  - image: {fileID: 21300000, guid: a1b2889d11fab334d920635f78ae8cb4, type: 3}
-    sentenceWithBlank: Which insect makes honey?
-    completedSentence: Bee
-    options:
-    - Butterfly
-    - Ant
-    - Bee
-    - Mosquito
-    correctAnswer: Bee
-  - image: {fileID: 21300000, guid: 9f92ea9fc832cff4c9aef27de17bd463, type: 3}
-    sentenceWithBlank: What tool is used to cut paper?
-    completedSentence: Scissors
-    options:
-    - Ruler
-    - Glue
-    - Eraser
-    - Scissors
-    correctAnswer: Scissors
+    - 10
+    - 15
+    - 20
+    - 25
+    correctAnswer: 15
   imageQuestion: {fileID: 11931953}
   instructionText: {fileID: 1247599499}
   grammarSentenceText: {fileID: 1889829030}
@@ -4368,5 +4368,9 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1305938923}
+    - target: {fileID: 5235846835562030724, guid: 282a2482d1ad6e446b8ca792b308b49f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: crossHard
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 282a2482d1ad6e446b8ca792b308b49f, type: 3}
