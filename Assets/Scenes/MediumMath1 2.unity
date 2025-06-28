@@ -3943,9 +3943,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 330821341}
     m_Modifications:
     - target: {fileID: 1524685810147258186, guid: 79bb974964c3eb544a24fbc504ff829c, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524685810147258186, guid: 79bb974964c3eb544a24fbc504ff829c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 758533875}
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524685810147258186, guid: 79bb974964c3eb544a24fbc504ff829c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Home2Game
+      objectReference: {fileID: 0}
     - target: {fileID: 1524685811858660322, guid: 79bb974964c3eb544a24fbc504ff829c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
