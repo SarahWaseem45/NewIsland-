@@ -355,6 +355,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &85631251 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5235846836330201353, guid: 282a2482d1ad6e446b8ca792b308b49f, type: 3}
+  m_PrefabInstance: {fileID: 722683577}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &105440026
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,7 +659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5527206246926225945, guid: 8d3f9f70bb963a54ba7fe4322293e45d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000020027
+      value: -57
       objectReference: {fileID: 0}
     - target: {fileID: 5527206246926225945, guid: 8d3f9f70bb963a54ba7fe4322293e45d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2453,11 +2464,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542334226934414780, guid: 38ec77e2f25f894418beb292424e71fc, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 260.7033
+      value: 130.2412
       objectReference: {fileID: 0}
     - target: {fileID: 3542334226934414780, guid: 38ec77e2f25f894418beb292424e71fc, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 189.7393
+      value: 114.8137
       objectReference: {fileID: 0}
     - target: {fileID: 3542334226934414780, guid: 38ec77e2f25f894418beb292424e71fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2493,7 +2504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542334226934414780, guid: 38ec77e2f25f894418beb292424e71fc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -7.3566
+      value: -34
       objectReference: {fileID: 0}
     - target: {fileID: 3542334226934414780, guid: 38ec77e2f25f894418beb292424e71fc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3104,6 +3115,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1262675834}
   m_CullTransparentMesh: 1
+--- !u!114 &1354467369 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5235846835422655069, guid: 282a2482d1ad6e446b8ca792b308b49f, type: 3}
+  m_PrefabInstance: {fileID: 722683577}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1371863657
 GameObject:
   m_ObjectHideFlags: 0
@@ -3693,6 +3715,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576950495}
   m_CullTransparentMesh: 1
+--- !u!1 &1605586309 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5235846835369998916, guid: 282a2482d1ad6e446b8ca792b308b49f, type: 3}
+  m_PrefabInstance: {fileID: 722683577}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1618137796
 GameObject:
   m_ObjectHideFlags: 0
@@ -4037,9 +4064,9 @@ MonoBehaviour:
   scoreText: {fileID: 1027366792}
   acCorrect: {fileID: 8300000, guid: 7d038a9cfe1e94a74a263ff61f989a42, type: 3}
   acWrong: {fileID: 8300000, guid: c01a2158dee6c48fc9120febb880323a, type: 3}
-  gameOverPanel: {fileID: 719973028}
-  finalScoreText: {fileID: 421115755}
-  highScoreText: {fileID: 1399477932}
+  gameOverPanel: {fileID: 1605586309}
+  finalScoreText: {fileID: 85631251}
+  highScoreText: {fileID: 1354467369}
   rightPanel: {fileID: 145447196}
   wrongPanel: {fileID: 926739934}
 --- !u!4 &1634648092
