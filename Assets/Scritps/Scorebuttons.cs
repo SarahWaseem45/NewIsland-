@@ -19,6 +19,10 @@ public class Scorebuttons : MonoBehaviour
     {
         SceneManager.LoadScene("EasySpellGame");
     }
+    public void replayeasyMath()
+    {
+        SceneManager.LoadScene("EasyMath1 1");
+    }
     public void crossmedium()
     {
         SceneManager.LoadScene("Level 2");
@@ -35,6 +39,10 @@ public class Scorebuttons : MonoBehaviour
     {
         SceneManager.LoadScene("MediumSpellGame");
     }
+     public void replaymediumMath()
+    {
+        SceneManager.LoadScene("MediumMath1 2");
+    }
      public void crossHard()
     {
         SceneManager.LoadScene("level 3");
@@ -50,5 +58,9 @@ public class Scorebuttons : MonoBehaviour
      public void replayhardspell()
     {
         SceneManager.LoadScene("HardSpellGame");
+    }
+     public void replayhardMath()
+    {
+        SceneManager.LoadScene("HardMath1");
     }
 }
